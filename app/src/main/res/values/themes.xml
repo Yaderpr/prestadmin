@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/transparent</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+
+        <item name="windowSplashScreenIconBackgroundColor">@android:color/transparent</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.PrestAdmin</item>
+    </style>
+    <style name="Theme.PrestAdmin" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
