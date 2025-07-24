@@ -22,6 +22,7 @@ import androidx.lifecycle.lifecycleScope
 import com.gonzales.prestadmin.R
 import com.gonzales.prestadmin.data.SessionPreferences
 import com.gonzales.prestadmin.ui.theme.PrestAdminTheme
+import com.gonzales.prestadmin.view.main.MainActivity
 import kotlinx.coroutines.launch
 
 class LoginActivity : ComponentActivity() {

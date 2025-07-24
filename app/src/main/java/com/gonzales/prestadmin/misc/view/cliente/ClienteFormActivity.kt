@@ -1,4 +1,4 @@
-package com.gonzales.prestadmin.view
+package com.gonzales.prestadmin.view.cliente
 
 import android.app.Activity
 import android.os.Bundle
