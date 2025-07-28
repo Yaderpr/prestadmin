@@ -1,4 +1,4 @@
-package com.gonzales.prestadmin.ui.theme
+package com.gonzales.prestadmin.misc.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
