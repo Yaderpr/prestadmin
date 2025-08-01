@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color> <color name="purple_500">#FF6200EE</color> <color name="purple_700">#FF3700B3</color> <color name="teal_200">#FF03DAC5</color> <color name="teal_700">#FF018786</color> <color name="black">#FFFFFFFF</color> <color name="white">#FF000000</color> <color name="md_theme_dark_primary">#FFB8D2FF</color>
+    <color name="md_theme_dark_onPrimary" tools:ignore="MissingDefaultResource">#FF003061</color>
+    <color name="md_theme_dark_background" tools:ignore="MissingDefaultResource">#FF191C20</color>
+</resources>

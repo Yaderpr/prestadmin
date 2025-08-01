@@ -1,4 +1,4 @@
-package com.gonzales.prestadmin.misc.ui.theme
+package com.gonzales.prestadmin.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

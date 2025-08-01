@@ -1,14 +1,20 @@
-package com.gonzales.prestadmin.domain.model.user.document
-import java.time.LocalDateTime
+package com.gonzales.prestadmin.domain.model.document
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerialName
 
+@Serializable
 data class Document(
-    val id: Int,
-    val clientId: Int?, // FK a ClientDetails.id (puede ser nulo si es una foto de usuario)
-    val userId: Int?, // FK a User.id_usuario (puede ser nulo si es una foto de cliente)
-    val fileName: String,
-    val storageUrl: String,
-    val documentType: String, // Ej: "CEDULA_FRONTAL", "FOTO_PERFIL_USUARIO", "COMPROBANTE_DOMICILIO", etc.
-    val mimeType: String?,
-    val sizeBytes: Long,
-    val uploadDate: LocalDateTime
+    val id: Int? = null, // Autoincremental, la DB lo genera
+    @SerialName("client_id") val clientId: Int? = null, // Puede ser nulo
+    @SerialName("user_id") val userId: Int? = null, // Puede ser nulo (FK), pero necesario para vincular
+    val filename: String,
+    @SerialName("storage_url") val storageUrl: String,
+    @SerialName("document_type") val documentType: DocumentType? = null, // Puede ser nulo
+    @SerialName("size_bytes") val sizeBytes: Int,
+    @SerialName("upload_date") val uploadDate: String // TIMESTAMP puede ser String ISO 8601 o Instant
 )
+@Serializable
+enum class DocumentType {
+    @SerialName("dni") DNI,
+    @SerialName("profile") PROFILE
+}
